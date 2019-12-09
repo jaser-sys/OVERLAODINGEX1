@@ -1,20 +1,24 @@
 #include<iostream>
 #include <string>
-
+#include<string.h>
+#include<cstdio>
+using namespace std;
 
 
 class overloading {
-private:
-	int count;
-	string strarr[10];
-	int intarr[10];
-	double doublearr[10];
-	void sort(int* myarr);
-	void sort(double* myarr);
-	void sort(string* myarr);
 public:
-	int middle(int* myarr);
-	double middle(double* myarr);
-	string middle(string* myarr);
+	void sort(int* myarr,int count);
+	void sort(double* myarr, int count);
+	void sort(string* myarr, int count);
+	int middle(int* myarr, int count);
+	double middle(double* myarr, int count);
+	string* middle(string* myarr, int count);
+	/*int min(int* myarr);
+	double min(double* myarr);
+	string min(string* myarr);*/
+	/*int min(int* myarr);
+	double min(double* myarr);
+	string min(string* myarr);*/
+
 
 };
