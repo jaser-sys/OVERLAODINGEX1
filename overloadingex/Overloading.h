@@ -12,13 +12,13 @@ public:
 	void sort(string* myarr, int count);
 	int middle(int* myarr, int count);
 	double middle(double* myarr, int count);
-	string* middle(string* myarr, int count);
-	/*int min(int* myarr);
-	double min(double* myarr);
-	string min(string* myarr);*/
-	/*int min(int* myarr);
-	double min(double* myarr);
-	string min(string* myarr);*/
+	string* middle(string** myarr, int count);
+	int min(int* myarr,int count);
+	double min(double* myarr, int count);
+	string* min(string** myarr, int count);
+	int max(int* myarr, int count);
+	double max(double* myarr, int count);
+	string* max(string** myarr, int count);
 
 
 };
