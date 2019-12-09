@@ -4,23 +4,16 @@
 
 using namespace std;
 
-class overloading {
-private:
-	int count;
-	string strarr[10];
-	int intarr[10];
-	double doublearr[10];
-	void sort(int* myarr) {
+void overloading::sort(int* myarr) {
 
 	}
-	void sort(double* myarr) {
+void overloading::sort(double* myarr) {
 
 	}
-	void sort(string* myarr) {
+void overloading::sort(string* myarr) {
 
 	}
-public:
-	int middle(int* myarr) {
+int overloading::middle(int* myarr) {
 		sort(myarr);
 		if (count % 2 == 1) {
 			return intarr[(count / 2)];
@@ -29,7 +22,7 @@ public:
 			return (intarr[(count / 2)] + intarr[(count / 2) - 1]) / 2;
 		}
 	}
-	double middle(double* myarr) {
+double overloading::middle(double* myarr) {
 		sort(myarr);
 		if (count % 2 == 1) {
 			return doublearr[(count / 2)];
@@ -38,7 +31,7 @@ public:
 			return (doublearr[(count / 2)] + doublearr[(count / 2) - 1]) / 2;
 		}
 	}
-	string middle(string* myarr) {
+string overloading::middle(string* myarr) {
 
 		sort(myarr);
 		if (count % 2 == 1) {
@@ -49,4 +42,3 @@ public:
 		}
 	}
 
-};
