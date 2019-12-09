@@ -60,6 +60,74 @@ string* overloading::max(string** myarr, int count) {
 
 }
 
+
+double overloading::sum(double* myarr, int count) {
+	double sum = 0;
+
+	for (int i = 0; i < count; i++) {
+		sum += *(myarr + i);
+	}
+	return sum;
+}
+
+
+int overloading::sum(int* myarr, int count) {
+	int sum = 0;
+
+	for (int i = 0; i < count; i++) {
+		sum += *(myarr + i);
+	}
+	return sum;
+}
+
+int overloading::stdev(int* myarr, int count) {
+	int ans = 0;
+	int sumIs = sum(myarr, count);
+	int avg = sumIs / count;
+	int sigma = 0;
+	int subavg = 0;
+	int sequared = 0;
+	int  midres = 0;
+	for (int i = 0; i < count; i++) {
+		subavg = (*(myarr + i) - avg);
+		sequared = subavg * subavg;
+		sigma += sequared;
+	}
+	midres = sigma / count;
+	ans = sqrt(midres);
+
+	return ans;
+}
+
+
+double overloading::stdev(double* myarr, int count) {
+	double ans = 0;
+	double sumIs = sum(myarr, count);
+
+	double avg = sumIs / count;
+	double sigma = 0;
+	double subavg = 0;
+	double sequared = 0;
+	double  midres = 0;
+	for (int i = 0; i < count; i++) {
+
+		subavg = fabs((*(myarr + i) - avg));
+
+		sequared = (subavg * subavg);
+		sigma += sequared;
+	}
+	midres = sigma / count;
+	ans = sqrt(midres);
+
+	return ans;
+}
+
+void overloading::stdev(string* myarr, int count) {
+
+	printf("%s", "Unavailable operation for string type");
+}
+
+
 int main() {
 
 
