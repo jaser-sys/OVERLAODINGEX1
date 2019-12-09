@@ -19,6 +19,10 @@ public:
 	int max(int* myarr, int count);
 	double max(double* myarr, int count);
 	string* max(string** myarr, int count);
-
+	int sum(int* myarr, int count);
+	double sum(double* myarr, int count);
+	int stdev(int* myarr, int count);
+	double stdev(double* myarr, int count);
+	void stdev(string* myarr, int count);
 
 };
