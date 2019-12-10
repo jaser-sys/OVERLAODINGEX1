@@ -128,11 +128,3 @@ void overloading::stdev(string* myarr, int count) {
 }
 
 
-int main() {
-
-
-
-
-	return 0;
-}
-
